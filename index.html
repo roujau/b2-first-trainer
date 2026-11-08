@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10172a">
+<meta name="description" content="Entrenador gratuito de Cambridge B2 First">
+<link rel="manifest" href="manifest.webmanifest">
+<title>B2 First Trainer</title>
+<style>
+:root{--bg:#0b1020;--panel:#141d33;--panel2:#1b2843;--line:#293754;--text:#f4f7ff;--muted:#aab6cc;--blue:#7c9cff;--cyan:#5eead4;--gold:#f6c76b;--red:#ff8b8b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0%,#1b2d52 0,transparent 32%),var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,textarea,select{font:inherit}button{cursor:pointer}.app{max-width:1050px;margin:auto;padding:18px 16px 90px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 22px}.brand{display:flex;align-items:center;gap:11px}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#7c9cff,#5eead4);display:grid;place-items:center;color:#10172a;font-weight:900;font-size:20px}.brand h1{font-size:18px;margin:0}.brand small{color:var(--muted)}.pill{border:1px solid var(--line);border-radius:99px;padding:7px 11px;color:var(--muted);font-size:12px}
+.hero{background:linear-gradient(125deg,#263b67,#182744 65%,#173d4a);border:1px solid #3a527c;border-radius:24px;padding:22px;margin-bottom:18px}.eyebrow{color:#b7c9ff;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:800}.hero h2{font-size:clamp(25px,5vw,36px);line-height:1.12;margin:8px 0}.hero p{color:#d1dcf2;max-width:650px;margin:8px 0 17px}.btn{border:0;border-radius:13px;padding:11px 15px;font-weight:750;background:var(--blue);color:#10172a}.btn.secondary{background:#263653;color:var(--text);border:1px solid #3b4d6d}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.btn:disabled{opacity:.45;cursor:not-allowed}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 22px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px}.stat strong{display:block;font-size:23px}.stat span{font-size:12px;color:var(--muted)}
+.section-title{display:flex;justify-content:space-between;align-items:end;margin:22px 2px 11px}.section-title h3{margin:0;font-size:18px}.section-title small{color:var(--muted)}
+.modules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.module{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:left;color:var(--text);min-height:116px}.module:active{transform:scale(.99)}.module .emoji{font-size:23px}.module strong{display:block;margin:7px 0 2px}.module small{color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:18px;margin-top:14px}.hidden{display:none!important}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.back{background:transparent;border:0;color:var(--blue);font-weight:700;padding:7px 0}.tag{font-size:11px;color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:1px}.question{padding:13px 0;border-bottom:1px solid var(--line)}.question:last-child{border:0}.question p{margin:0 0 9px}.answer{width:100%;background:#0d1528;border:1px solid #3a4a68;border-radius:10px;color:var(--text);padding:11px}.options{display:grid;gap:8px}.option{background:#0d1528;border:1px solid #354765;color:var(--text);border-radius:11px;padding:10px;text-align:left}.option.selected{border-color:var(--blue);background:#24385f}.feedback{margin-top:12px;padding:12px;border-radius:12px;background:#102d2b;border:1px solid #27655c}.feedback.bad{background:#351f2b;border-color:#794354}.muted{color:var(--muted)}.progress{height:8px;background:#293754;border-radius:9px;overflow:hidden}.progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));width:0}
+textarea.answer{min-height:190px;resize:vertical}.timer{font-variant-numeric:tabular-nums;color:var(--gold);font-weight:800}.nav{position:fixed;bottom:0;left:0;right:0;background:#0d1425ee;backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:8px;padding:9px 10px calc(9px + env(safe-area-inset-bottom));z-index:4}.nav button{flex:1;max-width:180px;background:transparent;border:0;color:var(--muted);padding:7px 4px;border-radius:10px;font-size:12px}.nav button.active{color:var(--text);background:#243653}.nav span{display:block;font-size:18px}
+.listrow{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}.listrow:last-child{border:0}
+@media(min-width:700px){.modules{grid-template-columns:repeat(3,1fr)}.app{padding-top:28px}.hero{padding:30px}.module{min-height:130px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header><div class="brand"><div class="logo">B2</div><div><h1>B2 First Trainer</h1><small>Cambridge English · práctica diaria</small></div></div><div class="pill">TU ESPACIO DE ESTUDIO</div></header>
+<main id="home">
+<section class="hero"><div class="eyebrow">Your next step · B2 First</div><h2>Entrena un poco.<br>Mejora cada día.</h2><p>Practica las destrezas del examen B2 First con ejercicios originales, corrección inmediata y seguimiento de tu progreso.</p><button class="btn" onclick="openExercise('use')">Empezar a practicar →</button></section>
+<div class="stats"><div class="stat"><strong id="done">0</strong><span>Ejercicios completados</span></div><div class="stat"><strong id="accuracy">—</strong><span>Precisión media</span></div><div class="stat"><strong id="streak">0</strong><span>Días de práctica</span></div></div>
+<div class="section-title"><h3>Áreas de entrenamiento</h3><small>Elige una destreza</small></div>
+<div class="modules">
+<button class="module" onclick="openExercise('use')"><span class="emoji">🧩</span><strong>Reading & Use of English</strong><small>Parts 1–7 · Use of English y Reading</small></button>
+<button class="module" onclick="openExercise('listening')"><span class="emoji">🎧</span><strong>Listening</strong><small>Comprensión auditiva y estrategias</small></button>
+<button class="module" onclick="openExercise('writing')"><span class="emoji">✍️</span><strong>Writing</strong><small>Essay, email, review y report</small></button>
+<button class="module" onclick="openExercise('speaking')"><span class="emoji">🗣️</span><strong>Speaking</strong><small>Parts 1–4 · práctica guiada</small></button>
+<button class="module" onclick="openExercise('grammar')"><span class="emoji">📚</span><strong>Grammar & Vocabulary</strong><small>Gramática, phrasal verbs y collocations</small></button>
+<button class="module" onclick="openExercise('mock')"><span class="emoji">⏱️</span><strong>Mock exam</strong><small>Mini simulacro cronometrado</small></button>
+</div>
+<div class="section-title"><h3>Tu actividad</h3><small id="lastActivity">Aún no has practicado</small></div>
+<div class="panel"><div class="listrow"><span>Objetivo recomendado</span><strong>15–20 min / día</strong></div><div class="listrow"><span>Última puntuación</span><strong id="lastScore">—</strong></div><div class="listrow"><span>Progreso guardado</span><strong>En este dispositivo</strong></div></div>
+</main>
+<section id="work" class="hidden">
+<div class="topline"><button class="back" onclick="goHome()">← Inicio</button><span class="tag" id="workTag">PRACTICE</span></div>
+<div class="panel">
+<div class="topline"><div><div class="tag" id="part">USE OF ENGLISH · PART 2</div><h2 id="exerciseTitle" style="margin:5px 0">Open Cloze</h2></div><div class="timer" id="timer">—</div></div>
+<p class="muted" id="instructions"></p>
+<div id="exerciseBody"></div><div id="result"></div>
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:15px"><button class="btn" id="checkBtn" onclick="checkAnswers()">Corregir respuestas</button><button class="btn secondary" onclick="newExercise()">Otro ejercicio</button></div>
+</div>
+</section>
+<section id="progressPage" class="hidden">
+<div class="topline"><button class="back" onclick="goHome()">← Inicio</button><span class="tag">MY PROGRESS</span></div>
+<div class="panel"><h2>Tu progreso</h2><p class="muted">Tus resultados se guardan automáticamente en este navegador.</p><div class="progress"><i id="progressBar"></i></div><p id="progressText" class="muted">Completa ejercicios para ver tus estadísticas.</p><div id="history"></div><button class="btn ghost" onclick="resetProgress()">Borrar mi progreso</button></div>
+</section>
+<section id="tipsPage" class="hidden">
+<div class="topline"><button class="back" onclick="goHome()">← Inicio</button><span class="tag">EXAM GUIDE</span></div>
+<div class="panel"><h2>Consejos para el B2 First</h2>
+<h3>Reading & Use of English</h3><p>Lee el texto completo antes de responder. En Open Cloze (Part 2), piensa en preposiciones, auxiliares, pronombres, conectores y estructuras gramaticales.</p>
+<h3>Listening</h3><p>Lee las preguntas antes de escuchar. Busca sinónimos y no elijas una respuesta solo porque repita exactamente una palabra del audio.</p>
+<h3>Writing</h3><p>Planifica antes de escribir. Responde todos los puntos, organiza el texto en párrafos y deja tiempo para revisar gramática, vocabulario y registro.</p>
+<h3>Speaking</h3><p>Amplía tus respuestas con razones y ejemplos. En la comparación, describe, compara y especula; no te limites a enumerar diferencias.</p>
+</div>
+</section>
+</div>
+<nav class="nav"><button class="active" id="navHome" onclick="showPage('home')"><span>⌂</span>Inicio</button><button id="navProgress" onclick="showPage('progressPage')"><span>▥</span>Progreso</button><button id="navTips" onclick="showPage('tipsPage')"><span>✦</span>Consejos</button></nav>
+<script>
+const $=id=>document.getElementById(id);
+const STORE='b2firsttrainer_v3';
+let data=JSON.parse(localStorage.getItem(STORE)||'{"done":0,"correct":0,"total":0,"history":[],"days":[],"last":null}');
+let current=null, selected={}, interval=null, seconds=0;
+function save(){localStorage.setItem(STORE,JSON.stringify(data));renderStats()}
+function renderStats(){
+ $('done').textContent=data.done; $('accuracy').textContent=data.total?Math.round(data.correct/data.total*100)+'%':'—';
+ const today=new Date().toISOString().slice(0,10); $('streak').textContent=data.days.includes(today)?'1':(data.days.length?data.days.length:0);
+ $('lastActivity').textContent=data.last?'Último ejercicio: '+data.last:'Aún no has practicado';
+ $('lastScore').textContent=data.history.length?data.history[0].score:'—';
+}
+function showPage(id){['home','work','progressPage','tipsPage'].forEach(x=>$(x).classList.toggle('hidden',x!==id));['navHome','navProgress','navTips'].forEach(x=>$(x).classList.remove('active'));if(id==='home')$('navHome').classList.add('active');if(id==='progressPage')$('navProgress').classList.add('active');if(id==='tipsPage')$('navTips').classList.add('active');if(id==='progressPage')renderProgress()}
+function goHome(){clearInterval(interval);showPage('home')}
+const bank={
+use:{part:'READING & USE OF ENGLISH · PART 2',title:'Open Cloze',instructions:'Read the text and write ONE word in each gap. Think about grammar and collocations.',text:'Learning a new language can be challenging, but it is worth the effort. One reason (1) ___ people give up is that they expect to become fluent too quickly. It is important to be patient (2) ___ yourself and to practise regularly. Even ten minutes a day can make (3) ___ difference. Try to use the language whenever you have the chance, rather (4) ___ waiting until you feel completely confident.',answers:['why','with','a','than'],explain:['“One reason why…” introduces the explanation.','The collocation is “be patient with someone”.','The fixed expression is “make a difference”.','“Rather than” means instead of.']},
+grammar:{part:'GRAMMAR & VOCABULARY',title:'Multiple-choice grammar',instructions:'Choose the best option (A, B, C or D) for each sentence.',qs:[['If I ___ more time, I would take up another language.',['have','had','will have','would have'],1,'Second conditional: If + past simple, would + infinitive.'],['She has been working here ___ 2022.',['for','during','since','from'],2,'Use “since” with a starting point in time.'],['The lecture was so ___ that I nearly fell asleep.',['bored','boring','bore','bores'],1,'“Boring” describes the thing that causes the feeling.'],['I look forward to ___ from you soon.',['hear','heard','hearing','be heard'],2,'“Look forward to” is followed by a gerund (-ing).']]},
+listening:{part:'LISTENING · PART 1',title:'Short extracts',instructions:'Read this original listening-style script as if you had heard it. Choose the correct answer. In a later version, this section can use recorded audio.',qs:[['What does the woman say about the course?',['It was more difficult than expected.','It was useful despite being demanding.','It was too expensive.'],1,'She says it was demanding but gave her practical skills.'],['Why did the man change his travel plans?',['His train was cancelled.','He wanted to visit a friend.','The weather forecast changed.'],0,'He explains that the train service was cancelled.']],script:'Woman: I knew the course would be quite intensive, but I didn’t realise how practical it would be. We had to complete several projects, which was tiring, but I’ve already used some of the skills at work.\\n\\nMan: I was going to travel on Friday evening, but the railway company announced that my train wouldn’t be running. I managed to get a ticket for Saturday morning instead.'},
+mock:{part:'MINI MOCK EXAM',title:'B2 First · Quick test',instructions:'A short mixed-skills quiz. Try to complete it without using a dictionary.',qs:[['Choose the correct word: I wish I ___ harder for the exam.',['studied','had studied','would study'],1,'“I wish” + past perfect expresses regret about the past.'],['The new sports centre is expected ___ next spring.',['to open','opening','open'],0,'Passive reporting structure: is expected to + infinitive.'],['Which phrase means “continue doing something”?',['carry on','put off','take after'],0,'“Carry on” means continue.'],['Choose the correct linker: ___ it was raining, they went ahead with the match.',['Despite','Although','However'],1,'“Although” is followed by a clause.'],['I’m not used to ___ up so early.',['get','getting','got'],1,'“Be used to” takes a noun or gerund.']]},
+};
+function openExercise(type){showPage('work');if(type==='writing')return writing();if(type==='speaking')return speaking();current=type;selected={};$('result').innerHTML='';$('checkBtn').classList.remove('hidden');$('timer').textContent='—';
+const ex=bank[type];$('part').textContent=ex.part;$('exerciseTitle').textContent=ex.title;$('instructions').textContent=ex.instructions;
+let out='';
+if(ex.text){out='<p style="white-space:pre-line;line-height:1.9">'+ex.text.replace(/\( ([1-9]) \)/g,'<b>($1)</b>').replace(/\(1\)/g,'<b>(1)</b>').replace(/\(2\)/g,'<b>(2)</b>').replace(/\(3\)/g,'<b>(3)</b>').replace(/\(4\)/g,'<b>(4)</b>')+'</p>';for(let i=0;i<ex.answers.length;i++)out+=`<div class="question"><label>Gap ${i+1}</label><input class="answer" id="a${i}" placeholder="One word" autocomplete="off"></div>`}
+else {if(ex.script)out+=`<details class="question"><summary>Read the listening script</summary><p style="white-space:pre-line">${ex.script}</p></details>`;ex.qs.forEach((q,i)=>{out+=`<div class="question"><p><b>${i+1}. ${q[0]}</b></p><div class="options">${q[1].map((v,j)=>`<button class="option" id="q${i}_${j}" onclick="choose(${i},${j})">${'ABCD'[j]}. ${v}</button>`).join('')}</div></div>`})}
+$('exerciseBody').innerHTML=out;
+}
+function choose(i,j){selected[i]=j;let q=bank[current].qs[i];q[1].forEach((_,k)=>$('q'+i+'_'+k).classList.toggle('selected',k===j))}
+function checkAnswers(){let ex=bank[current],score=0,total=ex.answers?ex.answers.length:ex.qs.length,details='';
+if(ex.answers){ex.answers.forEach((a,i)=>{let val=$('a'+i).value.trim().toLowerCase();let ok=val===a;if(ok)score++;details+=`<p>${i+1}. <b>${a}</b> — ${ok?'Correct!':'Your answer: '+(val||'—')+'.'} ${ex.explain[i]}</p>`})}
+else {ex.qs.forEach((q,i)=>{let ok=selected[i]===q[2];if(ok)score++;details+=`<p>${i+1}. <b>${q[1][q[2]]}</b> — ${ok?'Correct!':'Not quite.'} ${q[3]}</p>`})}
+data.done++;data.correct+=score;data.total+=total;data.last=ex.title;data.days=[...new Set([...data.days,new Date().toISOString().slice(0,10)])];data.history.unshift({name:ex.title,score:score+'/'+total,date:new Date().toLocaleDateString('es-ES')});data.history=data.history.slice(0,20);save();
+$('result').innerHTML=`<div class="feedback ${score===total?'':'bad'}"><b>Resultado: ${score}/${total} (${Math.round(score/total*100)}%)</b><div style="margin-top:8px">${details}</div></div>`;$('checkBtn').disabled=true;
+}
+function newExercise(){if(current==='writing')return writing();if(current==='speaking')return speaking();if(current==='use'||current==='grammar'||current==='listening'||current==='mock')openExercise(current)}
+function writing(){$('part').textContent='WRITING · PART 1';$('exerciseTitle').textContent='Essay';$('instructions').textContent='Write 140–190 words. You should spend about 40 minutes on this task.';$('workTag').textContent='WRITING';$('timer').textContent='40:00';$('exerciseBody').innerHTML='<div class="panel" style="background:#0d1528"><p>In your English class, you have been talking about the best ways for young people to learn about the world.</p><p><b>Write an essay using all the notes and give reasons for your point of view.</b></p><p>“The best way to learn about the world is to travel.” Do you agree?</p><p>Notes: 1. meeting people from other cultures  2. learning at school  3. (your own idea)</p></div><textarea class="answer" id="writingText" placeholder="Write your essay here..."></textarea><p class="muted" id="wordCount">0 words</p><div class="muted">Checklist: clear introduction · discuss all notes · examples/reasons · conclusion · formal/neutral style.</div>';let t=$('writingText');t.addEventListener('input',()=>{$('wordCount').textContent=t.value.trim()?t.value.trim().split(/\s+/).length+' words':'0 words'});$('checkBtn').textContent='Save practice';$('checkBtn').onclick=()=>{let words=t.value.trim().split(/\s+/).filter(Boolean).length;data.done++;data.last='Essay';data.history.unshift({name:'Essay',score:words+' words',date:new Date().toLocaleDateString('es-ES')});save();$('result').innerHTML=`<div class="feedback">Writing saved: ${words} words. Use the checklist to review your work. This version does not provide automatic examiner-level marking.</div>`;$('checkBtn').disabled=true};}
+function speaking(){$('part').textContent='SPEAKING · PART 2';$('exerciseTitle').textContent='Comparing photographs';$('instructions').textContent='Speak for about one minute. Record yourself with your phone if you want to review your fluency.';$('workTag').textContent='SPEAKING';$('exerciseBody').innerHTML='<div class="panel" style="background:#0d1528"><p><b>Compare two situations:</b></p><p>Photo A: two friends studying together in a library.</p><p>Photo B: a student studying alone at home using a laptop.</p><p><b>Question:</b> Why might people choose to study in these different ways, and which situation could be more effective?</p></div><textarea class="answer" id="speakingNotes" placeholder="Write useful vocabulary or notes after speaking..."></textarea><p class="muted">Try to use: whereas · both · unlike · might · could · seems to.</p>';$('checkBtn').textContent='Mark as practised';$('checkBtn').onclick=()=>{data.done++;data.last='Speaking Part 2';data.history.unshift({name:'Speaking Part 2',score:'Practised',date:new Date().toLocaleDateString('es-ES')});save();$('result').innerHTML='<div class="feedback">Practice recorded. Check: Did you compare both photos? Did you speculate? Did you answer the question?</div>';$('checkBtn').disabled=true};}
+function renderProgress(){$('progressBar').style.width=Math.min(100,data.done*5)+'%';$('progressText').textContent=`${data.done} ejercicios completados · ${data.total?Math.round(data.correct/data.total*100)+'% de precisión en ejercicios autocorregibles.':'Aún no hay resultados puntuables.'}`;$('history').innerHTML=data.history.length?data.history.map(x=>`<div class="listrow"><span>${x.name}<br><small class="muted">${x.date}</small></span><b>${x.score}</b></div>`).join(''):'<p class="muted">Tu historial aparecerá aquí.</p>'}
+function resetProgress(){if(confirm('¿Seguro que quieres borrar todo tu progreso?')){localStorage.removeItem(STORE);data={done:0,correct:0,total:0,history:[],days:[],last:null};save();renderProgress()}}
+renderStats();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
