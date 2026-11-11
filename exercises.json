@@ -1,0 +1,574 @@
+{
+  "sections": [
+    {
+      "id": "use",
+      "name": "Reading & Use of English",
+      "icon": "📖",
+      "description": "Parts 1–7 · Cloze, transformations and reading",
+      "tests": [
+        {
+          "id": "use-1",
+          "title": "Test 1 · Use of English",
+          "part": "Part 1 · Multiple-choice cloze",
+          "questions": [
+            {
+              "q": "The new policy will ____ effect next month.",
+              "options": [
+                "take",
+                "make",
+                "do",
+                "get"
+              ],
+              "answer": 0,
+              "why": "The fixed expression is “take effect”."
+            },
+            {
+              "q": "She managed to ____ the problem without asking for help.",
+              "options": [
+                "deal",
+                "cope",
+                "solve",
+                "handle with"
+              ],
+              "answer": 2,
+              "why": "“Solve a problem” is the natural collocation."
+            },
+            {
+              "q": "The hotel was fully booked, so we had to ____ alternative accommodation.",
+              "options": [
+                "look for",
+                "look after",
+                "look into",
+                "look up"
+              ],
+              "answer": 0,
+              "why": "“Look for” means search for something."
+            }
+          ]
+        },
+        {
+          "id": "use-2",
+          "title": "Test 2 · Open Cloze",
+          "part": "Part 2 · Open cloze",
+          "questions": [
+            {
+              "q": "I have known her ____ we were at primary school.",
+              "options": [
+                "for",
+                "since",
+                "during",
+                "from"
+              ],
+              "answer": 1,
+              "why": "Use “since” with the starting point of a period."
+            },
+            {
+              "q": "There is no point ____ about something you cannot change.",
+              "options": [
+                "worry",
+                "to worry",
+                "worrying",
+                "worried"
+              ],
+              "answer": 2,
+              "why": "“There is no point” is followed by a gerund."
+            },
+            {
+              "q": "Hardly ____ we arrived when it started to rain.",
+              "options": [
+                "had",
+                "have",
+                "did",
+                "were"
+              ],
+              "answer": 0,
+              "why": "Inversion after “hardly”: Hardly had we arrived when..."
+            }
+          ]
+        },
+        {
+          "id": "use-3",
+          "title": "Test 3 · Word Formation",
+          "part": "Part 3 · Word formation",
+          "questions": [
+            {
+              "q": "The instructions were so ____ that nobody understood them. (CONFUSE)",
+              "options": [
+                "confused",
+                "confusing",
+                "confusion",
+                "confusely"
+              ],
+              "answer": 1,
+              "why": "“Confusing” describes something that causes confusion."
+            },
+            {
+              "q": "The charity works to improve the lives of ____ people. (ADVANTAGE)",
+              "options": [
+                "disadvantaged",
+                "disadvantage",
+                "advantageous",
+                "disadvantaging"
+              ],
+              "answer": 0,
+              "why": "The adjective “disadvantaged” describes people in difficult circumstances."
+            },
+            {
+              "q": "It was an ____ decision, and he regretted it immediately. (IMPULSE)",
+              "options": [
+                "impulsively",
+                "impulsion",
+                "impulsive",
+                "impulsed"
+              ],
+              "answer": 2,
+              "why": "An adjective is needed before the noun “decision”."
+            }
+          ]
+        },
+        {
+          "id": "use-4",
+          "title": "Test 4 · Key Word Transformations",
+          "part": "Part 4 · Key word transformations",
+          "questions": [
+            {
+              "q": "I last visited Rome in 2022. (SINCE) I ____ 2022.",
+              "options": [
+                "haven't visited Rome since",
+                "didn't visit Rome since",
+                "haven't visit Rome since",
+                "don't visit Rome since"
+              ],
+              "answer": 0,
+              "why": "Present perfect + since describes a period continuing until now."
+            },
+            {
+              "q": "“You should get more sleep,” the doctor told me. (ADVISED) The doctor ____ more sleep.",
+              "options": [
+                "advised me getting",
+                "advised that I got",
+                "advised me to get",
+                "advised to me get"
+              ],
+              "answer": 2,
+              "why": "Advise + object + to-infinitive."
+            },
+            {
+              "q": "The journey took longer than we expected. (AS) The journey wasn't ____ we expected.",
+              "options": [
+                "as quick as",
+                "so quick than",
+                "as quickly than",
+                "quick as"
+              ],
+              "answer": 0,
+              "why": "The structure is not as + adjective + as."
+            }
+          ]
+        },
+        {
+          "id": "read-5",
+          "title": "Test 5 · Reading",
+          "part": "Part 5 · Multiple choice",
+          "questions": [
+            {
+              "q": "A writer describes learning to cook: “At first I followed every recipe exactly. Gradually, I began to experiment and trust my instincts.” What changed?",
+              "options": [
+                "The writer stopped cooking.",
+                "The writer became more confident and independent.",
+                "The writer decided recipes were useless.",
+                "The writer started teaching others."
+              ],
+              "answer": 1,
+              "why": "Experimenting and trusting instincts show growing confidence."
+            },
+            {
+              "q": "Which statement best summarises the passage?",
+              "options": [
+                "Cooking is only useful for experts.",
+                "Following instructions can be a starting point for developing skill.",
+                "Recipes should always be changed.",
+                "Cooking is too difficult to learn alone."
+              ],
+              "answer": 1,
+              "why": "The passage presents instructions as an initial learning stage."
+            }
+          ]
+        },
+        {
+          "id": "read-6",
+          "title": "Test 6 · Gapped Text",
+          "part": "Part 6 · Gapped text",
+          "questions": [
+            {
+              "q": "A paragraph explains that a local library began offering evening workshops. Which sentence would best follow it?",
+              "options": [
+                "As a result, more adults who work during the day can now attend.",
+                "The building was originally constructed in 1890.",
+                "Libraries contain books on many subjects.",
+                "Some people prefer watching television."
+              ],
+              "answer": 0,
+              "why": "It directly explains the consequence of evening workshops."
+            },
+            {
+              "q": "Choose the best link: “The first attempt was unsuccessful. ____, the team decided to try a different approach.”",
+              "options": [
+                "Nevertheless",
+                "For example",
+                "As a result",
+                "In contrast"
+              ],
+              "answer": 2,
+              "why": "The second sentence is the consequence of the first."
+            }
+          ]
+        },
+        {
+          "id": "read-7",
+          "title": "Test 7 · Multiple Matching",
+          "part": "Part 7 · Multiple matching",
+          "questions": [
+            {
+              "q": "A: “I wanted somewhere quiet, away from traffic, where I could walk every morning.” Which option suits A best?",
+              "options": [
+                "A city-centre hotel beside a shopping street.",
+                "A rural guesthouse with marked walking routes.",
+                "A seaside club with nightly music.",
+                "A business hotel near the airport."
+              ],
+              "answer": 1,
+              "why": "The rural guesthouse matches quiet surroundings and walking."
+            },
+            {
+              "q": "B: “I need a place with reliable Wi-Fi and a desk because I will be working remotely.” Which option suits B best?",
+              "options": [
+                "A campsite with shared facilities.",
+                "A remote cabin without internet.",
+                "An apartment offering fast Wi-Fi and a workspace.",
+                "A hostel focused on outdoor activities."
+              ],
+              "answer": 2,
+              "why": "The apartment explicitly provides the two required facilities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "name": "Listening",
+      "icon": "🎧",
+      "description": "Four listening task formats · original scripts",
+      "tests": [
+        {
+          "id": "lis-1",
+          "title": "Test 1 · Multiple Choice",
+          "part": "Listening · Part 1",
+          "script": "Woman: I thought the photography course would be mostly theory, but we spent almost every session outside taking pictures. It was challenging at first, although the tutor gave us useful feedback. I’m now much more confident using my camera.",
+          "questions": [
+            {
+              "q": "What surprised the woman about the course?",
+              "options": [
+                "How expensive it was",
+                "How much practical work it involved",
+                "How long each lesson lasted"
+              ],
+              "answer": 1,
+              "why": "She expected theory but spent most sessions taking photographs."
+            },
+            {
+              "q": "How does she feel now?",
+              "options": [
+                "More confident",
+                "Less interested",
+                "Still confused"
+              ],
+              "answer": 0,
+              "why": "She says she is much more confident using her camera."
+            }
+          ]
+        },
+        {
+          "id": "lis-2",
+          "title": "Test 2 · Sentence Completion",
+          "part": "Listening · Part 2",
+          "script": "The town's annual science festival will take place at the Riverside Centre from the 14th to the 16th of May. Visitors can attend free demonstrations, but tickets for the evening talks must be booked online. The main exhibition opens at ten each morning.",
+          "questions": [
+            {
+              "q": "Where will the science festival take place?",
+              "options": [
+                "Riverside Centre",
+                "Town Hall",
+                "University Library"
+              ],
+              "answer": 0,
+              "why": "The speaker names the Riverside Centre."
+            },
+            {
+              "q": "How must visitors book tickets for evening talks?",
+              "options": [
+                "By telephone",
+                "Online",
+                "At the entrance"
+              ],
+              "answer": 1,
+              "why": "The script says they must be booked online."
+            }
+          ]
+        },
+        {
+          "id": "lis-3",
+          "title": "Test 3 · Multiple Matching",
+          "part": "Listening · Part 3",
+          "script": "Speaker 1: I joined the gardening club because I wanted to learn how to grow vegetables.\\nSpeaker 2: I was mainly hoping to meet people with similar interests.\\nSpeaker 3: The best thing is being outdoors after a day at my desk.",
+          "questions": [
+            {
+              "q": "Who joined mainly to learn a practical skill?",
+              "options": [
+                "Speaker 1",
+                "Speaker 2",
+                "Speaker 3"
+              ],
+              "answer": 0,
+              "why": "Speaker 1 wanted to learn to grow vegetables."
+            },
+            {
+              "q": "Who values the social aspect most?",
+              "options": [
+                "Speaker 1",
+                "Speaker 2",
+                "Speaker 3"
+              ],
+              "answer": 1,
+              "why": "Speaker 2 wanted to meet like-minded people."
+            }
+          ]
+        },
+        {
+          "id": "lis-4",
+          "title": "Test 4 · Attitude",
+          "part": "Listening · Part 4",
+          "script": "I wasn't sure what to expect from the volunteering weekend. The weather wasn't ideal, and the work was physically demanding. However, seeing how much difference we made to the local park was incredibly satisfying. I'd certainly do it again.",
+          "questions": [
+            {
+              "q": "What is the speaker's overall attitude?",
+              "options": [
+                "Regretful",
+                "Positive despite some difficulties",
+                "Uninterested"
+              ],
+              "answer": 1,
+              "why": "The speaker acknowledges difficulties but found the experience satisfying."
+            },
+            {
+              "q": "Would the speaker volunteer again?",
+              "options": [
+                "Yes",
+                "No",
+                "They are undecided"
+              ],
+              "answer": 0,
+              "why": "They explicitly say they would do it again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Writing",
+      "icon": "✍️",
+      "description": "Essay, article, email, review and report",
+      "tests": [
+        {
+          "id": "wri-1",
+          "title": "Test 1 · Essay",
+          "part": "Writing · Part 1",
+          "task": "In your English class, you have been discussing how schools can help students become healthier. Write an essay discussing TWO of these ideas and explaining which is more important: school sports, healthy meals, health education. You may also include your own idea.",
+          "words": "140–190 words",
+          "time": "40 minutes",
+          "check": [
+            "I discuss two of the notes and give my opinion.",
+            "My essay has an introduction and conclusion.",
+            "I use paragraphs and linking expressions.",
+            "I support my ideas with reasons or examples.",
+            "I check grammar, spelling and punctuation."
+          ]
+        },
+        {
+          "id": "wri-2",
+          "title": "Test 2 · Article",
+          "part": "Writing · Part 2",
+          "task": "Your school magazine is asking students to write an article about a skill everyone should learn. Explain what the skill is, why it is useful and how young people can learn it. Give your article an engaging title.",
+          "words": "140–190 words",
+          "time": "40 minutes",
+          "check": [
+            "My title catches the reader's attention.",
+            "I address all parts of the task.",
+            "My style is engaging and suitable for a magazine.",
+            "I organise ideas into clear paragraphs.",
+            "I check grammar, spelling and punctuation."
+          ]
+        },
+        {
+          "id": "wri-3",
+          "title": "Test 3 · Email",
+          "part": "Writing · Part 2",
+          "task": "You have received an email from your English-speaking friend asking about a school exchange visit. Reply describing what you are looking forward to, what you are worried about and what you would like to do together.",
+          "words": "140–190 words",
+          "time": "40 minutes",
+          "check": [
+            "I answer all my friend's questions.",
+            "My tone is friendly and appropriate.",
+            "I organise the email clearly.",
+            "I use a range of vocabulary and grammar.",
+            "I check grammar, spelling and punctuation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speaking",
+      "name": "Speaking",
+      "icon": "🗣️",
+      "description": "Interview, long turn, collaborative task and discussion",
+      "tests": [
+        {
+          "id": "spe-1",
+          "title": "Test 1 · Long Turn",
+          "part": "Speaking · Part 2",
+          "task": "Compare these two situations: (A) students learning together in a classroom; (B) a student studying independently at home. Say why people might choose each situation and which could be more effective.",
+          "time": "1 minute",
+          "check": [
+            "I describe and compare both situations.",
+            "I speculate using might, could or may.",
+            "I answer the question, not just describe.",
+            "I speak fluently and connect my ideas."
+          ]
+        },
+        {
+          "id": "spe-2",
+          "title": "Test 2 · Collaborative Task",
+          "part": "Speaking · Part 3",
+          "task": "You and your partner are discussing how a town could become more attractive to young people. Consider: sports facilities, public transport, cultural events, green spaces and affordable cafés. Decide which two ideas would be most effective.",
+          "time": "2 minutes discussion + 1 minute decision",
+          "check": [
+            "I suggest ideas and explain why.",
+            "I invite my partner's opinion.",
+            "I agree or disagree politely.",
+            "I help reach a decision together."
+          ]
+        },
+        {
+          "id": "spe-3",
+          "title": "Test 3 · Interview",
+          "part": "Speaking · Part 1",
+          "task": "Answer aloud: What do you enjoy doing at weekends? Do you prefer spending time indoors or outdoors? What kind of films do you enjoy? Is it important to learn about other cultures?",
+          "time": "About 2 minutes",
+          "check": [
+            "I answer with more than one short sentence.",
+            "I give reasons or examples.",
+            "I speak clearly and naturally.",
+            "I use varied vocabulary."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name": "Grammar & Vocabulary",
+      "icon": "🧠",
+      "description": "Phrasal verbs, collocations, grammar and word formation",
+      "tests": [
+        {
+          "id": "gra-1",
+          "title": "Test 1 · Phrasal Verbs",
+          "part": "Vocabulary",
+          "questions": [
+            {
+              "q": "We need to ____ a solution before Friday.",
+              "options": [
+                "come up with",
+                "come across",
+                "come down with",
+                "come over"
+              ],
+              "answer": 0,
+              "why": "Come up with means think of or produce an idea."
+            },
+            {
+              "q": "I ____ an old friend while I was shopping.",
+              "options": [
+                "ran into",
+                "ran out",
+                "ran over",
+                "ran away"
+              ],
+              "answer": 0,
+              "why": "Run into someone means meet them unexpectedly."
+            }
+          ]
+        },
+        {
+          "id": "gra-2",
+          "title": "Test 2 · Collocations",
+          "part": "Vocabulary",
+          "questions": [
+            {
+              "q": "Which verb completes the collocation? ____ a decision.",
+              "options": [
+                "Do",
+                "Make",
+                "Take",
+                "Have"
+              ],
+              "answer": 1,
+              "why": "The usual collocation is make a decision."
+            },
+            {
+              "q": "Which adjective completes the phrase? ____ attention.",
+              "options": [
+                "Pay",
+                "Give",
+                "Make",
+                "Take"
+              ],
+              "answer": 0,
+              "why": "The fixed expression is pay attention."
+            }
+          ]
+        },
+        {
+          "id": "gra-3",
+          "title": "Test 3 · Grammar",
+          "part": "Grammar",
+          "questions": [
+            {
+              "q": "By the time we arrived, the concert ____.",
+              "options": [
+                "started",
+                "has started",
+                "had started",
+                "starts"
+              ],
+              "answer": 2,
+              "why": "Past perfect describes an event completed before another past event."
+            },
+            {
+              "q": "I look forward to ____ from you.",
+              "options": [
+                "hear",
+                "hearing",
+                "heard",
+                "be heard"
+              ],
+              "answer": 1,
+              "why": "“Look forward to” is followed by a noun or gerund."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
